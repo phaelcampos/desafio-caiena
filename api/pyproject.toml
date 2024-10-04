@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "api"
+version = "0.1.0"
+description = ""
+authors = ["raphael <raphaelcamachado@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.12.*"
+fastapi = {extras = ["standard"], version = "^0.115.0"}
+requests = "^2.32.3"
+pygithub = "^2.4.0"
+owm = {path = "../owm"}
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
