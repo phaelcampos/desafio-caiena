@@ -29,7 +29,10 @@ class OpenWeatherMapSDK:
                     "status": HTTPStatus.NOT_FOUND,
                     "message": f"City {city} not found",
                 }
-            return data, days
+            return {
+                "status": HTTPStatus.OK ,
+                "data": data
+            }
         except RequestException as e:
             return {
                 "status": HTTPStatus.BAD_REQUEST,

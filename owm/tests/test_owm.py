@@ -36,7 +36,7 @@ def test_get_weather_success(mock_get, sdk):
             "q": "London",
             "appid": "test_api_key",
             "units": "metric",
-            "cnt": 24  # 3 days * 8 forecasts per day
+            "cnt": 24
         }
     )
 

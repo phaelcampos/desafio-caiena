@@ -743,7 +743,7 @@ description = ""
 optional = false
 python-versions = "==3.12.*"
 files = [
-    {file = "owm-0.1.0-py3-none-any.whl", hash = "sha256:9f5d6fddd003d596599de8c9fa223d6653789712b7a0ef2d4bb238cff36eb9df"},
+    {file = "owm-0.1.0-py3-none-any.whl", hash = "sha256:aebb421d331f9f95c44a1ce6930239bdf383df5b0d11bedffe61fbb8b7692e23"},
 ]
 
 [package.dependencies]
