@@ -21,6 +21,7 @@ def format_weather_data(data, days=5):
             weather = day_data[0]['weather'][0]['main']
             translated_weather = WeatherTranslation.translate(weather)
             forecast.append(
-                f"{avg_temp:.0f}°C e {translated_weather} em {city} em {date.strftime('%d/%m')}."
+                f"- {avg_temp:.0f}°C e {translated_weather} em {city}"
+                f" em {date.strftime('%d/%m')}.\n"
             )
-    return ', '.join(forecast)
+    return ''.join(forecast)
