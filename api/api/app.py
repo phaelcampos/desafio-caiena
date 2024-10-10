@@ -38,5 +38,6 @@ async def get_weather(city: str) -> str:
 
     return gist.html_url
 
-if __name__ == "__main__":
+
+if __name__ == '__main__':
     app.run(debug=True)
