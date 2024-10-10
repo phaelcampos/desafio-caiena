@@ -1,5 +1,7 @@
 from datetime import datetime, timedelta
 
+from api.enums.weather_translation_enum import WeatherTranslation
+
 
 def format_weather_data(data, days=5):
     city = data['city']['name']
@@ -17,7 +19,8 @@ def format_weather_data(data, days=5):
                 day_data
             )
             weather = day_data[0]['weather'][0]['main']
+            translated_weather = WeatherTranslation.translate(weather)
             forecast.append(
-                f"{avg_temp:.0f}°C e {weather} em {city} em {date.strftime('%d/%m')}."
+                f"{avg_temp:.0f}°C e {translated_weather} em {city} em {date.strftime('%d/%m')}."
             )
     return ', '.join(forecast)
