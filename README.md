@@ -14,8 +14,13 @@ This project is a FastAPI-based web service that provides weather information fo
 - Poetry for dependency management
 - Docker (optional)
 
-## Installation
+## Clone the repository
 
+   ```
+   git clone https://github.com/phaelcampos/desafio-caiena.git
+   cd desafio-caiena
+   ```
+   
 ## Generating OWM Wheel File
 
 To generate a .whl file for the OWM library and move it to the root directory of the app:
@@ -35,12 +40,7 @@ To generate a .whl file for the OWM library and move it to the root directory of
    mv /owm/dist/owm-0.1.0-py3-none-any.whl desafio-caiena/api
    ```
 ****
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/phaelcampos/desafio-caiena.git
-   cd desafio-caiena
-   ```
+## Installation
 
 2. Enter on the api folder and install dependencies using Poetry:
    ```
